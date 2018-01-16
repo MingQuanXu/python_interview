@@ -1,9 +1,17 @@
-# 标题
-## 更小的标题
+**Contents**
 
-* 无序列表
-* 无序列表
+# python核心语法部分
 
-*Markdown*是一种简单**标记的**语言
+# 算法排序部分
 
-[为知笔记 Markdown新手指南](http://www.wiz.cn/feature-markdown.html))
+# 网络基础部分
+
+# 数据库部分
+
+# Linux部分
+
+# django项目部分
+
+#参考
+[总结Python开发面试中可能会问到的大部分问题](http://mp.weixin.qq.com/s/aRVP-ArvuxXtSvUxbJE7Ww)
+[python基础编程](https://github.com/taizilongxu/interview_python.git)
