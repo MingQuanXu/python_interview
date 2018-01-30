@@ -32,7 +32,7 @@
   
   这样就完成了调用，以下是调用图片识别结果案例：
   
-  <img src="https://github.com/MingQuanXu/python_interview/blob/master/example_python/ml.jpg" alt="ml.jpg" align=left />
+  <img src="https://github.com/MingQuanXu/python_interview/blob/master/example_python/ml.jpg" width="500" alt="ml.jpg" align=left />
  
 * #得到图片文字 
   ```
