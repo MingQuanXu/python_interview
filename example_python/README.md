@@ -6,9 +6,8 @@
 * 首先安装接口模块，在电脑终端里执行 pip install baidu-aip 即可。
 
 * 调用代码：
-
-  from aip import AipOcr  
-  <br/>""" 你的 APPID AK SK """
+  <br/>from aip import AipOcr  
+  <br/>#你的 APPID AK SK """
   <br/>APP_ID = '你的 App ID'
   <br/>API_KEY = '你的 Api Key'
   <br/>SECRET_KEY = '你的 Secret Key'
@@ -18,13 +17,13 @@
   上面代码块里APP_ID 、API_KEY、SECRET_KEY 三个值对应在http://console.bce.baidu.com/ai/#/ai/ocr/app/list 这里找到，需要用百度账号登录，然后创建一个应用，如下图：
   ![picture](https://github.com/MingQuanXu/python_interview/blob/master/example_python/ocr.jpg)
 
-* #读取图片 
- ```
+* #读取图片 ```
  def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 
-  image = get_file_content('ml.jpg')
+ image = get_file_content('ml.jpg')
+  ```
   <br/>#调用通用文字识别, 图片为远程url图片
   <br/>#res=client.basicGeneralUrl(url)
   <br/>#调用通用文字识别, 图片为本地图片 
@@ -35,6 +34,6 @@
 * ```
 for item in res['words_result']:
     print item['words']
-	
+```
 
 ![result](https://github.com/MingQuanXu/python_interview/blob/master/example_python/result.jpg)
