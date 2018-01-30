@@ -17,13 +17,14 @@
   上面代码块里APP_ID 、API_KEY、SECRET_KEY 三个值对应在http://console.bce.baidu.com/ai/#/ai/ocr/app/list 这里找到，需要用百度账号登录，然后创建一个应用，如下图：
   ![picture](https://github.com/MingQuanXu/python_interview/blob/master/example_python/ocr.jpg)
 
-* #读取图片 ```
+* #读取图片 </br>
+```
  def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 
  image = get_file_content('ml.jpg')
-  ```
+```
   <br/>#调用通用文字识别, 图片为远程url图片
   <br/>#res=client.basicGeneralUrl(url)
   <br/>#调用通用文字识别, 图片为本地图片 
