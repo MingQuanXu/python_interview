@@ -17,7 +17,7 @@
   上面代码块里APP_ID 、API_KEY、SECRET_KEY 三个值对应在http://console.bce.baidu.com/ai/#/ai/ocr/app/list 这里找到，需要用百度账号登录，然后创建一个应用，如下图：
   ![picture](https://github.com/MingQuanXu/python_interview/blob/master/example_python/ocr.jpg)
 
-* #读取图片 </br>
+* #读取图片
 ```
  def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
@@ -25,16 +25,19 @@
 
  image = get_file_content('ml.jpg')
 ```
-  <br/>#调用通用文字识别, 图片为远程url图片
+  #调用通用文字识别, 图片为远程url图片
   <br/>#res=client.basicGeneralUrl(url)
   <br/>#调用通用文字识别, 图片为本地图片 
   <br/>res=client.general(image)
   
   这样就完成了调用，以下是调用图片识别结果案例：
+  
   <img src="https://github.com/MingQuanXu/python_interview/blob/master/example_python/ml.jpg" alt="ml.jpg" align=left />
-* ```
-for item in res['words_result']:
-    print item['words']
-```
+ 
+* #得到图片文字 
+  ```
+  for item in res['words_result']:
+      print item['words']
+  ```
 
-![result](https://github.com/MingQuanXu/python_interview/blob/master/example_python/result.jpg)
+  ![result](https://github.com/MingQuanXu/python_interview/blob/master/example_python/result.jpg)
