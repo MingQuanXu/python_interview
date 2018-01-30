@@ -7,31 +7,32 @@
 
 * 调用代码：
 
-  from aip import AipOcr
-  """ 你的 APPID AK SK """
-  APP_ID = '你的 App ID'
-  API_KEY = '你的 Api Key'
-  SECRET_KEY = '你的 Secret Key'
+  from aip import AipOcr  
+  <br/>""" 你的 APPID AK SK """</br>
+  <br/>APP_ID = '你的 App ID'</br>
+  <br/>API_KEY = '你的 Api Key'</br>
+  <br/>SECRET_KEY = '你的 Secret Key'</br>
 
   client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
   上面代码块里APP_ID 、API_KEY、SECRET_KEY 三个值对应在http://console.bce.baidu.com/ai/#/ai/ocr/app/list 这里找到，需要用百度账号登录，然后创建一个应用，如下图：
-  ![picture]()
+  ![picture](https://github.com/MingQuanXu/python_interview/blob/master/example_python/ocr.jpg)
 
-* """ 读取图片 """
-  def get_file_content(filePath):
-     with open(filePath, 'rb') as fp:
-         return fp.read()
+* """ 读取图片 """  
+  <br/>def get_file_content(filePath):</br>
+     <br/>with open(filePath, 'rb') as fp:</br>
+         <br/>return fp.read()</br>
 
-  image = get_file_content('ml.jpg')
-  """ 调用通用文字识别, 图片为远程url图片 """
-  #res=client.basicGeneralUrl(url);
-  """ 调用通用文字识别, 图片为本地图片 """
-  res=client.general(image)
+  image = get_file_content('ml.jpg') 
+  <br/>""" 调用通用文字识别, 图片为远程url图片 """</br>
+  <br/>#res=client.basicGeneralUrl(url)</br>
+  <br/>""" 调用通用文字识别, 图片为本地图片 """</br> 
+  <br/>res=client.general(image)</br>
+  
   这样就完成了调用，以下是调用图片识别结果案例：
-  ![classify_picture]()
+  ![classify_picture](https://github.com/MingQuanXu/python_interview/blob/master/example_python/ml.jpg)
   
 * for item in res['words_result']:
-	print item['words']
+	<br/>print item['words']</br>
 	
-  ![result]()
+  ![result](https://github.com/MingQuanXu/python_interview/blob/master/example_python/result.jpg)
